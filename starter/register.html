@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Đăng ký tham gia · DTHU Football Club</title>
+
+    <meta
+      name="description"
+      content="Đăng ký tham gia DTHU Football Club dành cho sinh viên Trường Đại học Đồng Tháp."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DTHU Football Club" />
+
+    <meta property="og:title" content="Đăng ký tham gia · DTHU Football Club" />
+
+    <meta
+      property="og:description"
+      content="Đăng ký trở thành thành viên Câu lạc bộ Bóng đá sinh viên Trường Đại học Đồng Tháp."
+    />
+
+    <meta property="og:locale" content="vi_VN" />
+
+    <meta name="theme-color" content="#001D45" />
+
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#noi-dung"> Bỏ qua, đến nội dung chính </a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/logo.svg"
+            alt=""
+            width="48"
+            height="48"
+          />
+
+          <span class="brand__name"> DTHU <span>FC</span> </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav__link" href="index.html"> Trang chủ </a>
+            </li>
+
+            <li>
+              <a class="site-nav__link" href="events.html"> Lịch thi đấu </a>
+            </li>
+
+            <li>
+              <a class="site-nav__link" href="index.html#doi-hinh">
+                Đội hình
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="site-nav__link"
+                href="register.html"
+                aria-current="page"
+              >
+                Đăng ký tham gia
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="noi-dung" class="container page page--narrow">
+      <h1>Đăng ký tham gia DTHU FC</h1>
+
+      <p class="page__intro">
+        Điền thông tin bên dưới để đăng ký trở thành thành viên DTHU Football
+        Club. Ô có dấu
+        <abbr title="bắt buộc">*</abbr> là bắt buộc.
+      </p>
+
+      <form class="form" action="register.html" method="get">
+        <fieldset>
+          <legend>Thông tin sinh viên</legend>
+
+          <div class="form__grid">
+            <!-- MSSV -->
+
+            <p class="field">
+              <label for="student-id">
+                Mã số sinh viên
+                <abbr title="bắt buộc">*</abbr>
+              </label>
+
+              <input
+                id="student-id"
+                name="studentId"
+                type="text"
+                inputmode="numeric"
+                required
+                pattern="[0-9]{10}"
+                maxlength="10"
+                aria-describedby="student-id-hint"
+                autocomplete="off"
+              />
+
+              <small id="student-id-hint">
+                Gồm đúng 10 chữ số, ví dụ 0024410123.
+              </small>
+            </p>
+
+            <p class="field">
+              <label for="full-name">
+                Họ và tên
+                <abbr title="bắt buộc">*</abbr>
+              </label>
+
+              <input
+                id="full-name"
+                name="name"
+                type="text"
+                required
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+              />
+            </p>
+
+            <p class="field field--full">
+              <label for="email">
+                Email sinh viên
+                <abbr title="bắt buộc">*</abbr>
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="mssv@sv.dthu.edu.vn"
+              />
+            </p>
+
+            <p class="field">
+              <label for="password">
+                Mật khẩu
+                <abbr title="bắt buộc">*</abbr>
+              </label>
+
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="new-password"
+                aria-describedby="password-hint"
+              />
+
+              <small id="password-hint"> Ít nhất 8 ký tự. </small>
+            </p>
+
+            <p class="field">
+              <label for="birth-date"> Ngày sinh </label>
+
+              <input
+                id="birth-date"
+                name="birthDate"
+                type="date"
+                min="1980-01-01"
+                max="2010-12-31"
+              />
+            </p>
+          </div>
+        </fieldset>
+
+        <!-- ================= THÔNG TIN BÓNG ĐÁ ================= -->
+
+        <fieldset>
+          <legend>Thông tin bóng đá</legend>
+
+          <p class="field">
+            <label for="position">
+              Vị trí sở trường
+              <abbr title="bắt buộc">*</abbr>
+            </label>
+
+            <select id="position" name="position" required>
+              <option value="">— Chọn vị trí —</option>
+
+              <option value="Thu mon">Thủ môn</option>
+
+              <option value="Hau ve">Hậu vệ</option>
+
+              <option value="Tien ve">Tiền vệ</option>
+
+              <option value="Tien dao">Tiền đạo</option>
+            </select>
+          </p>
+
+          <fieldset class="choice-group">
+            <legend>Năm học hiện tại</legend>
+
+            <div class="choice-group__options">
+              <label class="choice">
+                <input id="year-1" name="year" type="radio" value="1" checked />
+                Năm 1
+              </label>
+
+              <label class="choice">
+                <input id="year-2" name="year" type="radio" value="2" />
+                Năm 2
+              </label>
+
+              <label class="choice">
+                <input id="year-3" name="year" type="radio" value="3" />
+                Năm 3
+              </label>
+
+              <label class="choice">
+                <input id="year-4" name="year" type="radio" value="4" />
+                Năm 4
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="choice-group">
+            <legend>Chân thuận</legend>
+
+            <div class="choice-group__options">
+              <label class="choice">
+                <input
+                  id="right-foot"
+                  name="preferredFoot"
+                  type="radio"
+                  value="Phai"
+                  checked
+                />
+
+                Chân phải
+              </label>
+
+              <label class="choice">
+                <input
+                  id="left-foot"
+                  name="preferredFoot"
+                  type="radio"
+                  value="Trai"
+                />
+
+                Chân trái
+              </label>
+
+              <label class="choice">
+                <input
+                  id="both-foot"
+                  name="preferredFoot"
+                  type="radio"
+                  value="Ca hai"
+                />
+
+                Cả hai
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="field">
+            <label for="experience"> Kinh nghiệm chơi bóng </label>
+
+            <select id="experience" name="experience">
+              <option value="">— Chọn kinh nghiệm —</option>
+
+              <option value="Moi choi">Mới chơi</option>
+
+              <option value="Duoi 1 nam">Dưới 1 năm</option>
+
+              <option value="1-3 nam">Từ 1 đến 3 năm</option>
+
+              <option value="Tren 3 nam">Trên 3 năm</option>
+            </select>
+          </p>
+
+          <p class="field">
+            <label for="intro"> Giới thiệu ngắn về bản thân </label>
+
+            <textarea
+              id="intro"
+              name="intro"
+              rows="4"
+              maxlength="500"
+              placeholder="Ví dụ: Tôi thường chơi vị trí tiền đạo và thích tham gia các giải bóng đá sinh viên."
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <p class="field--check">
+          <input id="agree" name="agree" type="checkbox" required />
+
+          <label for="agree">
+            Tôi đồng ý với nội quy sinh hoạt của DTHU Football Club
+            <abbr title="bắt buộc">*</abbr>
+          </label>
+        </p>
+
+        <p class="btn-row">
+          <button class="btn btn--primary" type="submit">
+            Đăng ký tham gia
+          </button>
+
+          <button class="btn btn--ghost" type="reset">Nhập lại</button>
+        </p>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>
+          DTHU Football Club · Trường Đại học Đồng Tháp · 783 Phạm Hữu Lầu, Cao
+          Lãnh, Đồng Tháp
+        </p>
+
+        <p>
+          Liên hệ:
+          <a href="mailto:dthufc@dthu.edu.vn"> dthufc@dthu.edu.vn </a>
+        </p>
+
+        <p>
+          <small> Bài thực hành môn IN4529 — Lập trình Front End. </small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
