@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lịch sự kiện · EduHub Web</title>
+    <meta name="description" content="Lịch các sự kiện sắp tới của CLB Bóng đá Trường Đại học Đồng Tháp, học kỳ I năm học 2026–2027.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EduHub Web">
+    <meta property="og:title" content="Lịch sự kiện · EduHub Web">
+    <meta property="og:description" content="Lịch các sự kiện sắp tới của CLB Bóng đá Trường Đại học Đồng Tháp, học kỳ I năm học 2026–2027.">
+    <meta property="og:url" content="https://ten-tai-khoan.github.io/eduhub-web/events.html">
+    <meta property="og:image" content="https://ten-tai-khoan.github.io/eduhub-web/assets/og-image.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="theme-color" content="#001D45">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua, đến nội dung chính</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="assets/anh0.png" alt="" width="48" height="48">
+          <span class="brand__name">Edu<span>Hub</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Trang chủ</a></li>
+          <li><a class="site-nav__link" href="events.html" aria-current="page">Sự kiện</a></li>
+          <li><a class="site-nav__link" href="index.html#cau-lac-bo">Câu lạc bộ</a></li>
+          <li><a class="site-nav__link" href="register.html">Đăng ký thành viên</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="noi-dung" class="container page">
+      <h1>Lịch sự kiện CLB Bóng đá</h1>
+      <p class="page__intro">Học kỳ I, năm học 2026–2027. Sự kiện có nhãn <strong>Sắp hết chỗ</strong> chỉ còn dưới 20% số chỗ — đăng ký sớm nhé.</p>
+
+      <section aria-labelledby="danh-sach">
+        <h2 id="danh-sach" class="section__head">Tất cả sự kiện</h2>
+        <!-- Ch03 sẽ thay các card tĩnh này bằng dữ liệu từ GET /api/events -->
+        <div class="card-grid">
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/anh9.png" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+            <h3 class="card__title"><a href="event-detail.html">Giao lưu bóng đá sinh viên</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-17T07:30+07:00">07:30, thứ Bảy 17/10/2026</time> · Sân bóng đá của trường</p>
+            <p class="card__text">Giao lưu bóng đá, rèn luyện sức khỏe và kết nối các bạn sinh viên yêu thích bóng đá.</p>
+            <p class="event-card__seats">Còn 12/60 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/anh7.png" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span></p>
+            <h3 class="card__title"><a href="events.html">Buổi tập luyện kỹ năng bóng đá</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-24T07:00+07:00">07:00, thứ Bảy 24/10/2026</time> · Sân bóng đá của trường</p>
+            <p class="card__text">Luyện tập chuyền bóng, sút bóng và phối hợp đồng đội cùng các thành viên CLB.</p>
+            <p class="event-card__seats">Còn 40/60 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/anh8.png" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+            <h3 class="card__title"><a href="events.html">Giao hữu bóng đá giữa các lớp</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-31T18:30+07:00">18:30, thứ Bảy 31/10/2026</time> · Sân bóng đá của trường</p>
+            <p class="card__text">Các đội bóng sinh viên giao hữu, học hỏi kinh nghiệm và nâng cao tinh thần đoàn kết.</p>
+            <p class="event-card__seats">Còn 6/80 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/anh10.png" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span></p>
+            <h3 class="card__title"><a href="events.html">Giải bóng đá sinh viên Khoa Công nghệ và Kỹ thuật 2026</a></h3>
+            <p class="event-card__info"><time datetime="2026-11-08T07:00+07:00">07:00, Chủ nhật 08/11/2026</time> · Sân bóng đá của trường</p>
+            <p class="card__text">Tám đội bóng của các lớp tranh cúp, cổ động viên được tặng áo đồng phục.</p>
+            <p class="event-card__seats">Còn 64/160 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/anh11.png" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span></p>
+            <h3 class="card__title"><a href="events.html">Ngày hội bóng đá sinh viên</a></h3>
+            <p class="event-card__info"><time datetime="2026-11-14T19:00+07:00">19:00, thứ Bảy 14/11/2026</time> · Sân bóng đá của trường</p>
+            <p class="card
