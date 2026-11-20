@@ -1,0 +1,174 @@
+/* Câu 1b: viết CSS tại đây */
+
+:root {
+  --color-primary: #006cb4;
+  --color-warning: #e40c24;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-md);
+  color: #333333;
+  background-color: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--spacing-md);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+main {
+  margin: var(--spacing-lg) 0;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+#search-form input[type="search"] {
+  padding: var(--spacing-sm);
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  min-width: 240px;
+}
+
+#search-form button {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  opacity: 0.9;
+}
+
+#status {
+  margin: var(--spacing-md) 0;
+  font-weight: 500;
+}
+
+#event-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  #event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  #event-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: var(--spacing-sm) 0;
+  font-size: 1.1rem;
+}
+
+.card h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.card h3 a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.badge {
+  background-color: var(--color-warning);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.9rem;
+}

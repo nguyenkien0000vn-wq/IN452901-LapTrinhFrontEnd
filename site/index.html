@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện sắp diễn ra · EduHub Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html" class="logo">EduHub Web</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html">Sự kiện</a></li>
+            <li><a href="#">Đăng ký</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Sự kiện sắp diễn ra</h1>
+
+        <form id="search-form">
+          <label for="keyword">Tìm sự kiện</label>
+          <input
+            type="search"
+            id="keyword"
+            name="keyword"
+            placeholder="Tìm sự kiện..."
+          />
+          <button type="submit">Tìm</button>
+        </form>
+
+        <p id="status"></p>
+
+        <div id="event-list">
+          <!-- Card 1 -->
+          <article class="card">
+            <img
+              src="img/event.svg"
+              alt="Workshop Git & GitHub cho tân sinh viên"
+            />
+            <h3>
+              <a
+                href="event-detail.html?id=22222222-2222-4222-8222-000000000001"
+                >Workshop Git & GitHub cho tân sinh viên</a
+              >
+            </h3>
+            <p>
+              <time datetime="2026-09-12T01:00:00.000Z">08:00 12/09/2026</time>
+            </p>
+            <p class="location">Phòng máy A3.201</p>
+            <p class="seats">Còn 12/40 chỗ</p>
+          </article>
+
+          <article class="card">
+            <img src="img/event.svg" alt="Hackathon EduHub 24 giờ" />
+            <h3>
+              <a
+                href="event-detail.html?id=22222222-2222-4222-8222-000000000004"
+                >Hackathon EduHub 24 giờ</a
+              >
+            </h3>
+            <p>
+              <time datetime="2026-12-19T01:00:00.000Z">08:00 19/12/2026</time>
+            </p>
+            <p class="location">Phòng máy A3.205</p>
+            <p class="seats"><span class="badge">Hết chỗ</span></p>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <p>© 2026 EduHub Web</p>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
